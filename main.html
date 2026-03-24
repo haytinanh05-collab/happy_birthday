@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main Love</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="card">
+      <div class="title">My Love</div>
+      <div class="slider" id="slider">
+        <div class="slides" id="slides">
+          <div class="slide"><img src="anh1.jpg" alt="Couple 1" /></div>
+          <div class="slide"><img src="anh2.jpg" alt="Couple 2" /></div>
+          <div class="slide"><img src="anh3.jpg" alt="Couple 3" /></div>
+          <div class="slide"><img src="anh4.jpg" alt="Couple 4" /></div>
+          <div class="slide"><img src="anh5.jpg" alt="Couple 5" /></div>
+          <div class="slide"><img src="anh6.jpg" alt="Couple 6" /></div>
+          <div class="slide"><img src="anh7.jpg" alt="Couple 7" /></div>
+        </div>
+        <button class="btn prev" id="prev-btn">‹</button>
+        <button class="btn next" id="next-btn">›</button>
+      </div>
+      <button class="cta" id="ctaBtn" title="Bấm vào đây nà">Bấm vào đây nà</button>
+      <div class="road-wrap" aria-hidden="true">
+        <div class="road"></div>
+        <div class="bus" id="bus" title="Click xem thiệp!">
+          <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+            <!-- Bánh chính -->
+            <circle cx="100" cy="120" r="70" fill="#f4a460" stroke="#8b4513" stroke-width="3"/>
+            <!-- Frosting hồng -->
+            <ellipse cx="100" cy="85" rx="68" ry="35" fill="#ff69b4" stroke="#d81b60" stroke-width="2"/>
+            <!-- Frosting wavy top -->
+            <path d="M 35 85 Q 40 70 50 75 T 70 70 T 90 75 T 110 70 T 130 75 T 150 70 T 165 85" fill="#ff69b4" stroke="#d81b60" stroke-width="2"/>
+            <!-- Nến 1 -->
+            <rect x="70" y="35" width="6" height="25" fill="#fff8dc" stroke="#8b4513" stroke-width="1"/>
+            <path d="M 73 30 Q 70 15 73 10 Q 76 15 73 30" fill="#ffd700" />
+            <!-- Nến 2 -->
+            <rect x="97" y="30" width="6" height="35" fill="#fff8dc" stroke="#8b4513" stroke-width="1"/>
+            <path d="M 100 20 Q 97 0 100 -5 Q 103 0 100 20" fill="#ff6347" />
+            <!-- Nến 3 -->
+            <rect x="124" y="35" width="6" height="25" fill="#fff8dc" stroke="#8b4513" stroke-width="1"/>
+            <path d="M 127 30 Q 124 15 127 10 Q 130 15 127 30" fill="#ffd700" />
+            <!-- Decoration dots -->
+            <circle cx="60" cy="100" r="3" fill="#fff" /><circle cx="100" cy="110" r="3" fill="#fff" /><circle cx="140" cy="100" r="3" fill="#fff" />
+          </svg>
+        </div>
+      </div>
+      <p class="hint">Bấm vào đây nàaaaaa</p>
+    </div>
+  </div>
+
+  <div id="modal-overlay" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <button class="close" id="modal-close">×</button>
+      <div class="envelope-top"></div>
+      <div class="content">
+        <div class="frame">
+          <div class="illustration" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 6 L44 24 H20 L32 6 Z" fill="#f8bbd0" stroke="#d81b60" stroke-width="2"/>
+              <path d="M18 24 H46 L42 52 H22 L18 24 Z" fill="#ffe4ec" stroke="#d81b60" stroke-width="2"/>
+              <path d="M32 18 L34 12 L36 18" stroke="#d81b60" stroke-width="3"/>
+              <path d="M26 36 Q32 28 38 36" stroke="#d81b60" stroke-width="2" fill="none" />
+            </svg>
+          </div>
+          <div class="text-block">
+            <h2>Chúc mừng sinh nhật em! <span class="heart">❤</span></h2>
+            <p>Sinh nhật đầu tiên đón cùng nhau, anh không hứa hẹn những điều quá xa xôi. Chỉ mong tuổi mới em luôn khỏe mạnh, bình an và giữ được nụ cười rạng rỡ. <span class="heart">❤</span> Cảm ơn em vì thời gian qua đã luôn ở bên và thấu hiểu anh. Tuổi mới cứ tự tin làm những gì mình thích nhé, vì lúc nào cũng có anh ở đây rồi. <span class="heart">❤</span> Happy Birthday em iu! <span class="heart">❤</span></p>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="bottom-deco">
+          <div class="cat"></div>
+          <div class="cat"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
