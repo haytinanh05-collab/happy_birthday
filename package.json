@@ -1,9 +1,5 @@
 {
   "name": "happy-birthday",
   "version": "1.0.0",
-  "description": "Personal Birthday Website",
-  "private": true,
-  "dependencies": {
-    "vite": "^8.0.2"
-  }
+  "description": "Personal Birthday Website"
 }
